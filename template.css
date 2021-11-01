@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap");
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Bhai 2', cursive;
+    box-sizing: border-box;
+}
+body{
+    background-color: hotpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: cornsilk;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
+}
+.container .left_side{
+position: relative;
+background: purple;
+padding: 40px;
+}
+
+.profiletext{
+       position: relative;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding-bottom: 20px;
+       border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    }
+ .profiletext .img{
+       position: relative;
+     width: 250px;
+     height: 250px;
+       border-radius: 50%;
+       border: 8px solid hotpink;
+       overflow: hidden;
+    }
+    .profiletext .img img{
+        position: absolute;
+    top: 0;
+      left: 0;
+      width:100% ;
+      height:100%;
+      object-fit: cover;
+
+    }
+   .profiletext h2{
+        color: white;
+        font-size: 2.2em;
+        margin-top: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+        line-height: 2em;
+    }
+    .profiletext h2 span{
+        font-size: 0.7em;
+       font-weight: 300;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .contactinfo{
+        padding-top: 40px;
+    }
+.title{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+   
+    font-family: 'Baloo Bhai 2', cursive;
+    
+}
+
+.contactinfo ul{
+position: relative;
+}
+.contactinfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+   
+   
+   
+}
+.contactinfo ul li .icon{
+display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contactinfo ul li span{
+    color: white;
+    font-weight: 300;
+    list-style: none;
+}
+.contactinfo.education li{
+    margin: bottom 15px;
+}
+
+.contactinfo.education h4{
+    color:royalblue ;
+    font-weight: 500;
+}
+
+.contactinfo.education h5{
+    color: white;
+    font-weight: 500;
+}
+
+ .contactinfo.language .percent{
+position: relative;
+width: 100%;
+height: 6px;
+background:hotpink;
+display: block;
+margin-top: 5px;
+ }
+ .contactinfo.language .percent div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background:green;
+ }
+  .right_side{
+    position:relative;
+    margin: 30px;
+    overflow: hidden;
+    }
+.right_side.profiletext2{
+padding: 10px;
+ position:relative;
+ text-align: left;
+padding-bottom: 20px;
+}
+.title2{
+    font-size: 1.8rem;
+    margin: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+
+}
+p{
+ margin-left: 10px;
+ font-size: 1.3rem;
+}
+h4{
+    font-size: 1.5rem;
+color: gray;
+margin-left: 15px;
+text-transform: uppercase;
+}
+.signal{
+    margin-bottom: 20px;
+}
+ @media only screen and (max-width: 1000px)
+{
+.container
+{
+    width: 100%;
+    margin: 10px;
+    grid-template-columns: repeat(1,1fr); 
+    
+}
+} 
+ 
